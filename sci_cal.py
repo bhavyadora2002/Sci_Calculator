@@ -9,6 +9,9 @@ def factorial(x):
     if(x<0):
         return "Enter positive number"
     return math.factorial(x)
+def power(num1,num2):
+    return num1 ** num2
+
 
 if __name__ == "__main__":
     
@@ -21,7 +24,9 @@ if __name__ == "__main__":
 
     if choice == 1:
         print("Result:",square_root(num1))
-    if choice == 2:
+    elif choice == 2:
         print("Result:",factorial(num1))
+    elif choice == 3:
+        print("Result:", power(num1,num2))
     else:
         print("Please enter valid response")
