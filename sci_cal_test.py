@@ -1,5 +1,5 @@
 import unittest
-from sci_cal import square_root,factorial,power
+from sci_cal import square_root,factorial,power,log
 
 class TestCalculator(unittest.TestCase):
     def test_square_root(self):
@@ -15,6 +15,10 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(power(1,39), 1)
         self.assertEqual(power(2,0), 1)
         self.assertEqual(power(-2,3), -8)
+    def test_log(self):
+        self.assertEqual(log(1), 0)
+        self.assertEqual(log(0), "Undefined")
+        self.assertEqual(log(-1), "Undefined")  
 
 if __name__ == "__main__":
     unittest.main()

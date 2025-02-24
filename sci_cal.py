@@ -11,6 +11,10 @@ def factorial(x):
     return math.factorial(x)
 def power(num1,num2):
     return num1 ** num2
+def log(num1):
+    if(num1<=0):
+        return "Undefined"
+    return math.log(num1)
 
 
 if __name__ == "__main__":
