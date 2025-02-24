@@ -5,7 +5,10 @@ def square_root(x):
     if(x<0):
         return "Imaginary roots"
     return math.sqrt(x)
-
+def factorial(x):
+    if(x<0):
+        return "Enter positive number"
+    return math.factorial(x)
 
 if __name__ == "__main__":
     
@@ -18,6 +21,7 @@ if __name__ == "__main__":
 
     if choice == 1:
         print("Result:",square_root(num1))
-
+    if choice == 2:
+        print("Result:",factorial(num1))
     else:
         print("Please enter valid response")
