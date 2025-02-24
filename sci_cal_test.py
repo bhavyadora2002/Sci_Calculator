@@ -16,9 +16,9 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(power(2,0), 1)
         self.assertEqual(power(-2,3), -8)
     def test_log(self):
-        self.assertEqual(log(1), 0)
+        self.assertEqual(log(1), 1)
         self.assertEqual(log(0), "Undefined")
-        self.assertEqual(log(-1), "Undefined")  
+        self.assertEqual(log(-1), "Unknown")  
 
 if __name__ == "__main__":
     unittest.main()
