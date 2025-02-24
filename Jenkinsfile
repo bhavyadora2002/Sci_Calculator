@@ -5,7 +5,7 @@ pipeline {
         stage('Clone Git') {
             steps {
                 echo "Checkout the source code from the Git repository"
-                git branch: 'main', url:'https://github.com/bhavyadora2002/Calculator.git'
+                git branch: 'main', url:'https://github.com/bhavyadora2002/Sci_Calculator.git'
             }
         }
 
